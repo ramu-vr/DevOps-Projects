@@ -73,7 +73,17 @@
                        <plugin>
         <groupId>org.sonarsource.scanner.maven</groupId>
         <artifactId>sonar-maven-plugin</artifactId>
-        <version>3.7.0.1746</version>
+	<version>3.7.0.1746</version>
+
+	 <configuration>
+                <!-- SonarQube server URL -->
+                <sonar.host.url>http://13.126.139.12:9000</sonar.host.url>
+                <!-- SonarQube project key -->
+                <sonar.projectKey>loginAPP</sonar.projectKey>
+
+                <!-- SonarQube authentication token -->
+                <sonar.login>sqp_a96082b55df6f46737d77571548f9aec40f88438</sonar.login>
+            </configuration>
       </plugin>
 
 
