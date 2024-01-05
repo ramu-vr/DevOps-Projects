@@ -98,4 +98,5 @@
         <name>ip-172-31-15-117.ap-south-1.compute.internal-snapshots</name>
         <url>https://ramujfrog.com/artifactory/maven-local</url>
     </snapshotRepository>
-    </project>
+    </distributionManagement>
+</project>
