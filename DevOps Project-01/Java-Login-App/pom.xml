@@ -16,6 +16,13 @@
 	<description>DPT DevOps project for Spring Boot</description>
 
 	<properties>
+		<!-- SonarQube server URL -->
+    <sonar.host.url>http://13.126.139.12:9000</sonar.host.url>
+    
+    <!-- SonarQube project key -->
+    <sonar.projectKey>loginAPP</sonar.projectKey>
+
+
 		<java.version>1.8</java.version>
 	</properties>
 
@@ -60,12 +67,25 @@
 	</dependencies>
 
 	<build>
-		<plugins>
+	  <pluginManagement>	
+                <plugins>
+			
+                       <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>3.7.0.1746</version>
+      </plugin>
+
+
+
+
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
+		      		<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+       
+            </pluginManagement>
 	</build>
 <distributionManagement>
     <repository>

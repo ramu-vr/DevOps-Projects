@@ -7,9 +7,27 @@
       <password>Ramu260994</password>
       <id>central</id>
     </server>
-    
+    i
   </servers>
+   <pluginGroups>
+        <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
+    </pluginGroups>
+
   <profiles>
+    <profile>
+            <id>admin</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <!-- Optional URL to server. Default value is http://localhost:9000 -->
+                <sonar.host.url>
+                  http://13.126.139.12:9000
+                </sonar.host.url>
+            </properties>
+        </profile>
+
+
     <profile>
       <repositories>
         <repository>
