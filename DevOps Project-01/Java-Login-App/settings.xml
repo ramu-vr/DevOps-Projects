@@ -65,6 +65,9 @@
     </profile>
   </profiles>
   <activeProfiles>
-    <activeProfile>artifactory</activeProfile>
+	 
+
+	  <activeProfile>admin</activeProfile>
+	  <activeProfile>artifactory</activeProfile>
   </activeProfiles>
 </settings>
